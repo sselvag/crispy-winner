@@ -10,6 +10,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "scripts": {
+      "test": "jest"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sselvag/crispy-winner.git"
@@ -22,5 +25,8 @@
   "homepage": "https://github.com/sselvag/crispy-winner#readme",
   "dependencies": {
     "inquirer": "^8.2.4"
+  },
+  "devDependencies": {
+    "jest": "^28.1.3"
   }
 }
