@@ -1,0 +1,26 @@
+{
+  "name": "module10challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sselvag/crispy-winner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sselvag/crispy-winner/issues"
+  },
+  "homepage": "https://github.com/sselvag/crispy-winner#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  }
+}
