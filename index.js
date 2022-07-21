@@ -20,8 +20,14 @@ const manager = [
     },
     {
         type: 'input',
-        name: 'officenumber',
+        name: 'officeNumber',
         message: 'What is the team managers office number?'
+    },
+    {
+        type: 'list',
+        name:'teamMember',
+        message: 'Would you like to add another employee?',
+        choices: ['Engineer', 'Intern', 'No, I am done']
     }
 ]
 
@@ -43,8 +49,14 @@ const engineer = [
     },
     {
         type: 'input',
-        name: 'github',
+        name: 'gitHub',
         message: 'What is the engineers github?'
+    },
+    {
+        type: 'list',
+        name:'teamMember',
+        message: 'Would you like to add another employee?',
+        choices: ['Engineer', 'Intern', 'No, I am done']
     }
 ]
 
@@ -66,7 +78,21 @@ const intern = [
     },
     {
         type: 'input',
-        name: 'officenumber',
+        name: 'school',
         message: 'Which school does the intern attend?'
+    },
+    {
+        type: 'list',
+        name:'teamMember',
+        message: 'Would you like to add another employee?',
+        choices: ['Engineer', 'Intern', 'No, I am done']
     }
 ]
+
+// function to loop through tm question
+
+function repeatQuestions()
+
+// initiate function
+// function for no i am done
+
