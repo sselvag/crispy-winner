@@ -99,6 +99,12 @@ const promptEngineer = () => {
     })
 };
 
+function writeToFile() {
+    fs.writeFile('./dist/index.html', generateHTML(team),
+    (err) =>
+        err ? console.log(err) : console.log('Success'));
+};
+
 const promptIntern = () => {
     return inquirer.prompt([
         {
@@ -144,10 +150,6 @@ const promptIntern = () => {
         }
     })
 };
-
-function writeToFile() {
-    return fs.writeFile('./dist/index.html', generateHTML(team));
-}
 
 promptManager();
 
