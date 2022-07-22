@@ -24,6 +24,6 @@ describe("getEmail", () => {
 describe("getGithub", () => {
     it("should return the engineer's gitHub", () => {
         const testEmp = new Engineer('Swaathy','2','swaathy.selva@gmail.com','sselvag');
-        expect(testEmp.id).gitHub('sselvag');
+        expect(testEmp.gitHub).toEqual('sselvag');
     })
 });
