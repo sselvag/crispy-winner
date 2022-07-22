@@ -91,8 +91,26 @@ const intern = [
 
 // function to loop through tm question
 
-function repeatQuestions()
+function writeToFile() {
+    return fs.writeFile('./dist/', generateHTML);
+}
+
+function repeatQuestions(data) {
+    if (data.teamMember === 'Engineer') {
+        inquirer.prompt(engineer)
+    } else if (data.teamMember === 'Intern') {
+        inquirer.prompt(intern)
+    } else if (data.teamMember === 'No, I am done') {
+        writeToFile();
+    };
+}
 
 // initiate function
+
+function init() {
+    inquirer.prompt(manager);
+}
+
 // function for no i am done
+init();
 
