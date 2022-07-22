@@ -1,9 +1,9 @@
 const inquirer = require("inquirer");
 const fs = require('fs');
-const generateHTML = require('./utils/generateHTML');
 const Manager = require('./lib/manager');
 const Engineer = require('./lib/engineer');
 const Intern = require('./lib/intern');
+const generateHTML = require('./utils/generateHTML');
 
 const team = [];
 
@@ -36,7 +36,7 @@ const promptManager = () => {
             choices: ['Engineer', 'Intern', 'No, I am done']
         }
     ]).then (answers => {
-        const manager = new Manager(data.name, data.id, data.email, data.officeNumber);
+        const manager = new Manager(answers.name, answers.id, answers.email, answers.officeNumber);
         team.push(manager);
         if (answers.teamMember === 'Engineer') {
             promptEngineer();
@@ -82,7 +82,7 @@ const promptEngineer = () => {
             choices: ['Engineer', 'Intern', 'No, I am done']
         }
     ]).then (answers => {
-        const engineer = new Engineer(data.name, data.id, data.email, data.gitHub);
+        const engineer = new Engineer(answers.name, answers.id, answers.email, answers.gitHub);
         team.push(engineer);
         if (answers.teamMember === 'Engineer') {
             promptEngineer();
@@ -128,7 +128,7 @@ const promptIntern = () => {
             choices: ['Engineer', 'Intern', 'No, I am done']
         }
     ]).then (answers => {
-        const intern = new Intern(data.name, data.id, data.email, data.school);
+        const intern = new Intern(answers.name, answers.id, answers.email, answers.school);
         team.push(intern);
         if (answers.teamMember === 'Engineer') {
             promptEngineer();
