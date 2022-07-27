@@ -15,3 +15,5 @@ The following link is a walkthrough video that demonstrates the functioanlity of
 https://drive.google.com/file/d/1OgawVcvonQCSwY4EJFzPXi8abMU4nxSM/view?usp=sharing
 
 The following screenshot displays how to initiate the Team Profile Generator.
+![Screen Shot 2022-07-27 at 12 35 16 AM](https://user-images.githubusercontent.com/64749332/181162467-5a30b93f-c552-4441-ac48-967eb2a70c94.png)
+
